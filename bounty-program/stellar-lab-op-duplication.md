@@ -30,3 +30,7 @@ The developer should have knowledge of Stellar Laboratory and Stellar SDK.
   
  *Submission Procedure* <br>
   * Submit your PR link on the Stellar-Quest Discord channel
+
+## Possible Solution
+
+![image](https://user-images.githubusercontent.com/73634107/126083722-86a89a1a-93f3-4efb-bb7a-3bd90ec53b5f.png)
