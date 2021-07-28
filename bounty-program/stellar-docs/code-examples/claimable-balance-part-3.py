@@ -1,5 +1,5 @@
-claimBalance = ClaimClaimableBalance(balance_id = balance_id)
-print(f"{A.public_key} claiming {balance_id}")
+claimBalance = ClaimClaimableBalance(balance_id = balanceId)
+print(f"{A.public_key} claiming {balanceId}")
 
 tx = (
     TransactionBuilder (

@@ -1,13 +1,24 @@
-from stellar_sdk import Keypair, Network, Server
-from stellar_sdk import TransactionBuilder, Transaction, Asset, Operation
-from stellar_sdk import Claimant, ClaimPredicate, CreateClaimableBalance, ClaimClaimableBalance
-from stellar_sdk.exceptions import NotFoundError, BadResponseError, BadRequestError
 import time
+from stellar_sdk.xdr import TransactionResult, OperationType
+from stellar_sdk.exceptions import NotFoundError, BadResponseError, BadRequestError
+from stellar_sdk import (
+    Keypair,
+    Network,
+    Server,
+    TransactionBuilder,
+    Transaction,
+    Asset,
+    Operation,
+    Claimant,
+    ClaimPredicate,
+    CreateClaimableBalance,
+    ClaimClaimableBalance
+)
 
 server = Server("https://horizon-testnet.stellar.org")
 
-A = Keypair.from_secret("SANRGB5VXZ52E7XDGH2BHVBFZR4S25AUQ4BR7SFXIQYT5J6W2OES2OP7")
-B = Keypair.from_public_key("GAAPSRMYNFAO3TDQTLNLKN76IQ3E6IQAKU23PSQX3BIV7RTEBXHQIWU6")
+A = Keypair.from_secret("SBDLSAHWZHQZG6ZQDJY63XQORETH5X5Q5BM66JUW4E6S7CVHXGX373GO")
+B = Keypair.from_public_key("GBS6YWU5NAFZFZTRYMVVRBGE4IREF67AYVC3EFYMKS5NZVCHX2NXFB6L")
 
 # NOTE: Proper error checks are omitted for brevity; always validate things!
 
