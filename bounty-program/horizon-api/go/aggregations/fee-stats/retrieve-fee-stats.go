@@ -1,19 +1,19 @@
 package main
 
 import (
-  "fmt"
-  "log"
+    "fmt"
+    "log"
 
-  "github.com/stellar/go/clients/horizonclient"
+    "github.com/stellar/go/clients/horizonclient"
 )
 
 func main() {
-  client := horizonclient.DefaultPublicNetClient
+    client := horizonclient.DefaultPublicNetClient
 
-  resp, err := client.FeeStats()
-  if err != nil {
-    log.Fatal(err)
-    return
-  }
-  fmt.Println(resp)
+    resp, err := client.FeeStats()
+    if err != nil {
+        log.Fatal(err)
+        return
+    }
+    fmt.Println(resp)
 }
